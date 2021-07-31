@@ -16,6 +16,11 @@ class Country extends Model
         'name'
     ];
 
+    public function users() {
+
+        return $this->hasMany('App\Model\User');
+    }
+
     public function hotels() {
 
         return $this->hasMany('App\Model\Hotel');

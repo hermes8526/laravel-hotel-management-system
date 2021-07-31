@@ -1,0 +1,52 @@
+.add-title {
+    font-size: 18px;
+    border-bottom: 2px solid black;
+    color: #0956A6 !important;
+    border-color: #0956A6 !important;
+}
+
+.action-toolbar {
+    position: absolute;
+    right: 80px;
+    top:75px;
+}
+
+.parts-use {
+    font-size: 18px;
+    font-weight: bold !important;
+}
+
+.table thead tr th {
+    font-size: 12px !important;
+    padding: 6px;
+}
+
+
+@media (max-width: 767px) {
+    .row {
+        margin-top:5px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .col-xs-12 {
+        margin-top:5px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .col-md-12 {
+        padding-left: 10px !important;
+        margin-top: 10px !important;
+    }
+
+    .action-toolbar {
+        position: unset;
+        padding: 10px;
+    }
+
+    .action-toolbar .btn {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+}

@@ -69,4 +69,9 @@ class Hotel extends Model
         
         return $this->belongsTo('App\Models\City', 'city_id');
     }
+
+    public function booking() {
+        
+        return $this->hasMany('App\Models\Booking');
+    }
 }

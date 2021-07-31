@@ -4,6 +4,7 @@
     var numOfSlides = $slides.length;
     var slidingAT = 1300; // sync this with scss variable
     var slidingBlocked = false;
+
     [].slice.call($slides).forEach(function ($el, index) {
         var i = index + 1;
         $el.classList.add('slide-' + i);

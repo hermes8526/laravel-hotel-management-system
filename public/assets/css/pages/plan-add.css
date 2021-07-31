@@ -1,0 +1,32 @@
+.plan-detail {
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+
+.tabbable-custom{
+    margin-bottom: 0px !important;
+}
+
+@media (max-width: 767px) {
+    .row {
+        margin-top:5px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .col-xs-12 {
+        margin-top:5px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .col-md-12 {
+        padding-left: 10px !important;
+        margin-top: 10px !important;
+    }
+
+    .action-toolbar {
+        position: unset;
+        padding: 10px;
+    }
+}

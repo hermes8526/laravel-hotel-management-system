@@ -21,7 +21,40 @@ class HomeController extends Controller
         $search['roomCount'] = $request->post('searchRoomCount');
 
         $hotels = Hotel::where([['city_id', '27'], ['status', 'Activated']])->get();
-        return view('home.hotelList', compact('search', 'hotels'));
+        return view('home.list', compact('search', 'hotels'));
+    }
+
+    public function single(Request $request) {
+
+        $search['hotel_id'] = $request->post('searchHotel');
+        $search['checkIn'] = $request->post('searchCheckin');
+        $search['checkOut'] = $request->post('searchCheckout');
+        $search['roomCount'] = $request->post('searchRoomCount');
+
+        $hotels = Hotel::where([['id', '1'], ['status', 'Activated']])->get();
+        return view('home.single', compact('search', 'hotels'));
+    }
+
+    public function cart(Request $request) {
+
+        $search['hotel_id'] = $request->post('searchHotel');
+        $search['checkIn'] = $request->post('searchCheckin');
+        $search['checkOut'] = $request->post('searchCheckout');
+        $search['roomCount'] = $request->post('searchRoomCount');
+
+        $hotels = Hotel::where([['id', '1'], ['status', 'Activated']])->get();
+        return view('home.cart', compact('search', 'hotels'));
+    }
+
+    public function book(Request $request) {
+
+        $search['hotel_id'] = $request->post('searchHotel');
+        $search['checkIn'] = $request->post('searchCheckin');
+        $search['checkOut'] = $request->post('searchCheckout');
+        $search['roomCount'] = $request->post('searchRoomCount');
+
+        $hotels = Hotel::where([['id', '1'], ['status', 'Activated']])->get();
+        return view('home.book', compact('search', 'hotels'));
     }
 
     public function getHotels() {

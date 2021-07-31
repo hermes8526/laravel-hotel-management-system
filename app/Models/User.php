@@ -19,9 +19,33 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
+        'code',
         'name',
-        'email',
         'password',
+        'email',
+        'remember_token',
+        'contact',
+        'website',
+        'address',
+        'country_id',
+        'state_id',
+        'city_id',
+        'postcode',
+        'credit_limit',
+        'remarks',
+        'commission',
+        'status',
+        'salutation',
+        'firstname',
+        'lastname',
+        'designation',
+        'mobile1',
+        'tel1',
+        'fax1',
+        'mobile2',
+        'tel2',
+        'fax2',
+        'email2'
     ];
   
     /**
@@ -34,18 +58,18 @@ class User extends Authenticatable
         'remember_token',
     ];
   
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    // protected $casts = [
+    //     'email_verified_at' => 'datetime',
+    // ];
 
-    public function article()
-    {
-        return $this->hasMany('App\Model\Article');
+    public function country() {
+        
+        return $this->belongsTo('App\Models\Country', 'country_id');
+    }
+
+    public function city() {
+        
+        return $this->belongsTo('App\Models\City', 'city_id');
     }
 
 }

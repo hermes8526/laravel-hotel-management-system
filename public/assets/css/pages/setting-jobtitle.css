@@ -1,0 +1,64 @@
+@media (min-width: 992px) {
+    .page-content-wrapper .page-content {
+        height: 100% !important;
+    }
+}
+
+.action-toolbar {
+    position: absolute;
+    right: 80px;
+    top:75px;
+}
+
+.job-title {
+    font-size: 22px;
+    border-bottom: 2px solid black;
+}
+
+button.btnadd {
+    font-size: 25px;
+    background-color: #f99f1b; 
+    min-width: 140px; 
+    height: 47px; 
+    border-radius:22px !important; 
+    color: white !important;
+}
+
+.table-container {
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+    .row {
+        margin-top:5px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .col-xs-12 {
+        margin-top:5px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .tab-content>.active {
+        overflow-x: scroll;
+    }
+
+    .tabbable-custom > .nav-tabs > li{
+        width: 100% !important;
+    }
+
+    .action-toolbar {
+        position: unset;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .action-toolbar .btn {
+        width: 100% !important;
+    }
+}

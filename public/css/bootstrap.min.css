@@ -3635,9 +3635,9 @@ background-color:#adb5bd
 	background-color: #fff;
 	border: 1px solid #000 !important;
 	border-radius: .25rem;
-	right: 19px;
+	right: 0;
 	position: absolute;
-	top: 76px;
+	top: 6px;
 }
 .navbar-toggler:focus, .navbar-toggler:hover {
 	text-decoration: none
@@ -3865,6 +3865,7 @@ background-color:#adb5bd
 	color: #000;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+	color: 
 }
 .navbar-light .navbar-toggler {
 	color: rgba(0,0,0,.5);

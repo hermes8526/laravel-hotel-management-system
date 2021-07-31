@@ -1,0 +1,39 @@
+.modal.fade.in {
+    top:0%;
+}
+
+.newmodal {
+    border-radius:30px !important; 
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.portlet.calendar .fc-button {
+    top: 0px !important; 
+    color: #000000 !important;
+}
+
+.fc-prev-button {
+  border: none;
+  background: transparent !important;
+}
+
+.fc-next-button {
+  border: none;
+  background: transparent !important;
+}
+
+.fc-center {
+    margin-top: 15px;
+}
+
+.portlet.calendar .fc-button .fc-icon-left-single-arrow {
+    font-size: 40px !important;
+}
+
+.portlet.calendar .fc-button .fc-icon-right-single-arrow {
+    font-size: 40px !important;
+}
