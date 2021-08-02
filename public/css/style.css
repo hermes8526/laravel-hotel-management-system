@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,800&amp;display=swap'); {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,800&amp;display=swap');
+* {
 font-family: 'Montserrat', sans-serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&amp;display=swap');
@@ -153,7 +154,6 @@ font-family: 'Montserrat', sans-serif;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	border-radius: ;
 	 transition: -webkit-clip-path 0s 0.91s; 
 	 transition: clip-path 0s 0.91s;
 	 transition: clip-path 0s 0.91s, -webkit-clip-path 0s 0.91s;
@@ -312,7 +312,7 @@ button.btn-search {
 	background-color: #112e94;
 	border: none;
 	border-radius: 21px;
-	padding: 11px 13px;
+	padding: 10px;
 	float: right;
 }
 
@@ -1565,7 +1565,6 @@ section.how-does .sec-con ul li:nth-child(3):after {
 	position: relative;
 	margin-bottom: 50px;
 	text-align: center;
-	padding: ;
 	margin: 0 14px;
 }
 .wizard {
@@ -1658,7 +1657,6 @@ span.round-tab i{
 .wizard .tab-pane {
 	position: relative;
 	padding-top: 40px;
-	padding-bottom: ;
 }
 
 
@@ -2088,7 +2086,6 @@ textarea:focus-visible {
 }
 .drop-down .options ul li img {
 	width: 18px;
-	height: ;
 	margin: 0px 20px 0 0;
 	position: relative;
 	top: 3px;

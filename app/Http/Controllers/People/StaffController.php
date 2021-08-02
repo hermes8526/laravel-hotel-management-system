@@ -16,7 +16,7 @@ class StaffController extends Controller
     public function getStaffs() {
 
         if(request()->ajax()) {
-            return datatables()->of(User::where('role_id', 3))
+            return datatables()->of(User::where('role', 'staff'))
             ->addColumn('action', function($user) {
                 return view('partials.action', [
                     'user'       => $user,

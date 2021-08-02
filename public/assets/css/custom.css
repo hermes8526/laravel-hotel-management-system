@@ -296,10 +296,6 @@ button.btnsave {
     
 }
 
-.form-control {
-    border-radius:4px !important;
-}
-
 .setting-btn {
     background-color: #27699f;
     border-radius: 10px;
@@ -424,10 +420,8 @@ button.btnsave {
 }
 
 .tabbable-custom > .nav-tabs > li {
-    margin-right: 6px;
     border-left: none;
     border-bottom: none;
-    min-width: 160px;
     text-align: center;
 }
 
@@ -723,14 +717,6 @@ div.dataTables_wrapper div.dataTables_paginate {
     border:none !important;
 }
 
-.control-label {
-    font-size:18px !important;
-    padding-top: 0px !important;
-    color: #0956A6 !important;
-    font-weight: bold !important;
-    text-align: left !important;
-}
-
 button.filter-cancel {
     background:transparent;
 }
@@ -813,4 +799,8 @@ li.page-title > a.page-name {
 .page-content-wrapper
 {
     margin-top: 5px;
+}
+
+.form-group label {
+    font-size: 12px;
 }

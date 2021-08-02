@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Hotel;
 use App\Models\City;
+use App\Models\Country;
+use App\Models\User;
+use App\Models\HotelFacility;
 
 class HotelController extends Controller
 {
@@ -58,9 +61,14 @@ class HotelController extends Controller
 
     public function show($id)
     {
-        $type = 'hotel-active';
-        $is_saved = 1;
-        return view('hotel.hotel.show', compact('type', 'is_saved'));
+        $hotel = Hotel::findOrFail($id);
+        $countries = Country::all();
+        $cities = City::all();
+        $wholeSalers = User::where('role', 'wholeSaler')->get();
+        $hotelFacilities = HotelFacility::all();
+        $type = 'hotel-details';
+        $is_saved = 0;
+        return view('hotel.hotel.show', compact('hotel', 'countries', 'cities', 'wholeSalers', 'hotelFacilities', 'type', 'is_saved'));
     }
 
     public function edit($id)

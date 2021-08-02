@@ -16,7 +16,7 @@ class AgentController extends Controller
     public function getAgents() {
 
         if(request()->ajax()) {
-            return datatables()->of(User::where('role_id', 2))
+            return datatables()->of(User::where('role', 'agent'))
             ->addColumn('action', function($user) {
                 return view('partials.action', [
                     'user'       => $user,

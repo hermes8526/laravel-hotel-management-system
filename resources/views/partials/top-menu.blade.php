@@ -20,17 +20,17 @@
         </a>
     </li>
     <li class="nav-item {{ Request::is('*billing*') ? 'active' :'' }}">
-        <a href="{{ route('/') }}" class="nav-link">
+        <a href="$" class="nav-link">
             <span class="title">BILLING</span>
         </a>
     </li>
     <li class="nav-item {{ Request::is('*setting*') ? 'active' :'' }}">
-        <a href="{{ route('/') }}" class="nav-link">
+        <a href="$" class="nav-link">
             <span class="title">SETTING</span>
         </a>
     </li>
     <li class="nav-item {{ Request::is('*report*') ? 'active' :'' }}">
-        <a href="{{ route('/') }}" class="nav-link">
+        <a href="$" class="nav-link">
             <span class="title">Report</span>
         </a>
     </li>

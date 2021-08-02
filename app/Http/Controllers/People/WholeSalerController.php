@@ -16,7 +16,7 @@ class WholeSalerController extends Controller
     public function getWholeSalers() {
 
         if(request()->ajax()) {
-            return datatables()->of(User::where('role_id', 1))
+            return datatables()->of(User::where('role', 'wholeSaler'))
             ->addColumn('action', function($user) {
                 return view('partials.action', [
                     'user'       => $user,

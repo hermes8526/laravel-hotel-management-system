@@ -15,7 +15,7 @@ class CustomerController extends Controller
     public function getCustomers() {
 
         if(request()->ajax()) {
-            return datatables()->of(User::where('role_id', '4'))
+            return datatables()->of(User::where('role', 'customer'))
             ->addColumn('action', function($user) {
                 return view('partials.action', [
                     'user'       => $user,
