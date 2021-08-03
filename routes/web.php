@@ -10,6 +10,8 @@ use App\Http\Controllers\People\StaffController;
 use App\Http\Controllers\People\CustomerController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\Hotel\HotelController;
+use App\Http\Controllers\Hotel\FacilityController;
+use App\Http\Controllers\Hotel\RoomTypeController;
 
 Auth::routes();
 
@@ -35,14 +37,11 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('hotel/hotel', HotelController::class);
     Route::post('/hotel/hotel/getHotels', [HotelController::class, 'getHotels'])->name('getHotels');
 
-    Route::resource('hotel/facility', HotelController::class);
-    Route::post('/hotel/facility/getHotels', [HotelController::class, 'getHotels'])->name('getHotels');
+    Route::resource('hotel/facility', FacilityController::class);
+    Route::post('/hotel/facility/getFacilities', [FacilityController::class, 'getFacilities'])->name('getFacilities');
 
-    Route::resource('hotel/roomType', HotelController::class);
-    Route::post('/hotel/roomType/getHotels', [HotelController::class, 'getHotels'])->name('getHotels');
-
-    Route::resource('report', HotelController::class);
-    Route::post('/report/getHotels', [HotelController::class, 'getHotels'])->name('getHotels');
+    Route::resource('hotel/roomType', RoomTypeController::class);
+    Route::post('/hotel/roomType/getRoomTypes', [RoomTypeController::class, 'getRoomTypes'])->name('getRoomTypes');
 
 });
 

@@ -61,7 +61,7 @@
                             <a href="#hotel_payment" data-toggle="tab">PAYMENT </a>
                         </li>
                         <li class="tab @if($type == 'hotel-rate') active @endif">
-                            <a href="#hotel_rate" data-toggle="tab">ROOM RATE </a>
+                            <a href="#hotel_room_rate" data-toggle="tab">ROOM RATE </a>
                         </li>
                     </ul>
                     <div class="tab-content no-padding">
@@ -461,7 +461,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane @if($type == 'hotel-room-rate') active @endif" id="hotel_rom_rate">
+                        <div class="tab-pane @if($type == 'hotel-room-rate') active @endif" id="hotel_room_rate">
                             This is a room rate page.
                         </div>
                     </div>
